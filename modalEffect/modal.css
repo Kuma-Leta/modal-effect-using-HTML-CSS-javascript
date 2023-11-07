@@ -1,0 +1,46 @@
+.see-more,.close{
+  background-color: rgb(46, 130, 46);
+ 
+  border: none;
+  color: white;
+  min-width: auto; 
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.close{
+  max-width: auto;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.modal-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: rgba(128, 128, 128, 0.388);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  background-color: white;
+  border-radius: 6px;
+  height: 200px;
+  padding: 1rem;
+}
+.dynamic{
+  opacity: 1;
+  pointer-events: all;
+}
